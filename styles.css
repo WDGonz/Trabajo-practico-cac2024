@@ -1,0 +1,173 @@
+body {
+    background-color: darkgrey;
+    font-family:"Rationale", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+.rationale-regular {
+    font-family: "Rationale", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+header {
+    background-color: #333; /* Color de fondo de la barra de navegación */
+    padding: 10px 0; /* Espaciado interno */
+}
+
+.navbar {
+    display: flex;
+    background-color: #333;
+    color: white;
+    align-items: center;
+    padding: 10px;
+  }
+  .navbar-logo {
+    margin-right: auto;
+  }
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar ul li {
+    padding: 0 20px;
+  }
+  .navbar ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+  }
+  .navbar ul li a:hover {
+    color: #ddd;
+  }
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Altura del segmento hero */
+    overflow: hidden; /* Oculta el contenido que exceda del área */
+}
+
+.carousel {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    flex: 1;
+    position: relative;
+    transition: transform 0.5s ease; /* Animación de transición */
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen para cubrir todo el espacio */
+}
+
+.caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para el texto */
+    color: #fff;
+    padding: 10px;
+}
+
+.active {
+    transform: translateX(0);
+}
+
+/* Configuración del carrusel para la reproducción automática */
+@keyframes slideAnimation {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+.carousel {
+    animation: slideAnimation 5s infinite alternate; /* Reproduce el carrusel automáticamente */
+}
+
+.payment-promotions {
+    background-color: #a3e05d; /* Color de fondo de la sección */
+    padding: 50px 0; /* Espaciado interno */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos a los lados */
+}
+
+.payment-methods, .special-promotions {
+    flex: 1; /* Ocupa el mismo espacio */
+}
+
+.payment-methods h2, .special-promotions h2 {
+    color: #333; /* Color del título */
+}
+
+.payment-methods ul, .special-promotions ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.payment-methods ul li, .special-promotions ul li {
+    margin-bottom: 10px; /* Espaciado entre elementos */
+}
+
+/* Estilos adicionales según sea necesario */
+
+
+footer {
+    background-color: #333; /* Color de fondo del pie de página */
+    color: #fff; /* Color del texto */
+    padding: 20px 0; /* Espaciado interno */
+}
+
+.footer-container {
+    display: flex; /* Usa flexbox para alinear los elementos */
+    justify-content: space-around; /* Distribuye los elementos de manera uniforme */
+}
+
+.footer-section {
+    flex: 1; /* Ocupa todo el espacio disponible */
+    margin-right: 20px; /* Espaciado entre las secciones */
+}
+
+.footer-section h3 {
+    color: #fff; /* Color del título de la sección */
+}
+
+.footer-section ul {
+    list-style-type: none; /* Quita los estilos de lista */
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px; /* Espaciado entre elementos de la lista */
+}
+
+.social-icons {
+    display: flex; /* Usa flexbox para alinear los íconos */
+    padding: 0;
+}
+
+.social-icons li {
+    margin-right: 10px; /* Espaciado entre los íconos */
+}
+
+.social-icons li:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último ícono */
+}
+
+.social-icons img {
+    width: 30px; /* Tamaño de los íconos de redes sociales */
+    height: auto;
+}
