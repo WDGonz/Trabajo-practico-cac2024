@@ -1,14 +1,16 @@
 body {
-    background-image: url(./multimedia/how-to-become-a-web-developer-it-1024x512.jpeg);
-    background-size: cover; /* Asegura que la imagen cubra toda la página */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    font-family: "Rationale", sans-serif;
+    background-color: darkgrey;
+    font-family:"Rationale", sans-serif;
     font-weight: 400;
     font-style: normal;
     margin: 0;
     padding: 0;
 }
-
+.rationale-regular {
+    font-family: "Rationale", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
   
 header {
     background-color: #333; /* Color de fondo de la barra de navegación */
@@ -43,77 +45,7 @@ header {
     color: #ddd;
   }
 
-  .container {
-    width: 80%;
-    margin: 0 auto;
-    font-family: "Rationale", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-  
-.carousel {
-    display: flex;
-    overflow: hidden;
-    min-width: 100%;
-    transition: transform 0.5s ease;
-}
-  
-.slide{
-    min-width: 100%;
-    transition: transform 0.5s ease;
-}
-
-img {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 10px;
-    margin-left: 30%;
-}
-  
-.info {
-    background-color: #9dacb4;
-    padding: 10px;
-    border-radius: 5px;
-    font-family: "Rationale", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-
-}
-
-.dev-links {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    margin-right: 10%;
-}
-
-.dev-links li {
-    margin: 0 10px; 
-}
-  
-#prevButton, #nextButton {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 10px;
-    font-size: 18px;
-}
-  
-#prevButton { left: 10px; }
-#nextButton { right: 10px; }
-
-@media (max-width: 768px) {
-    .container {
-      width: 95%;
-    }
-}
-
-
-footer {
+  footer {
     background-color: #333; /* Color de fondo del pie de página */
     color: #fff; /* Color del texto */
     padding: 20px 0; /* Espaciado interno */
