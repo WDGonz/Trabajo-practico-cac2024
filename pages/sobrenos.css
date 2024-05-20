@@ -1,5 +1,5 @@
 body {
-    background-image: url(../multimedia/how-to-become-a-web-developer-it-1024x512.jpeg);
+    background-image: url(/multimedia/how-to-become-a-web-developer-it-1024x512.jpeg);
     background-size: cover; /* Asegura que la imagen cubra toda la página */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     font-family: "Rationale", sans-serif;
