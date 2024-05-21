@@ -26,11 +26,13 @@ header {
     color: white;
     align-items: center;
     padding: 10px;
-  }
-  .navbar-logo {
+}
+
+.navbar-logo {
     margin-right: auto;
-  }
-  #ppro{
+}
+
+#ppro{
     margin-left: 26%;
 }
   .navbar ul {
@@ -38,20 +40,20 @@ header {
     display: flex;
     margin: 0;
     padding: 0;
-  }
-  .navbar ul li {
+ }
+.navbar ul li {
     padding: 0 20px;
-  }
-  .navbar ul li a {
+}
+.navbar ul li a {
     text-decoration: none;
     color: white;
     transition: color 0.3s ease;
-  }
-  .navbar ul li a:hover {
+}
+.navbar ul li a:hover {
     color: #ddd;
-  }
+}
 
-  .container {
+.container {
     width: 80%;
     margin: 0 auto;
     font-family: "Rationale", sans-serif;
@@ -173,6 +175,7 @@ footer {
     width: 30px; /* Tamaño de los íconos de redes sociales */
     height: auto;
 }
+
 .postfooter {
     background-color:#333;
     text-align: center;
