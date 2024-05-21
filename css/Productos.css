@@ -59,6 +59,7 @@ header {
 .footer-section {
     flex: 1; /* Ocupa todo el espacio disponible */
     margin-right: 20px; /* Espaciado entre las secciones */
+    margin-left: 2%;
 }
 
 .footer-section h3 {
