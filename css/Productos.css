@@ -23,39 +23,48 @@ header {
     color: white;
     align-items: center;
     padding: 10px;
-  }
-  .navbar-logo {
+}
+.navbar-logo {
     margin-right: auto;
-  }
-  .navbar ul {
+}
+.navbar ul {
     list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
-  }
-  .navbar ul li {
+}
+.navbar ul li {
     padding: 0 20px;
-  }
-  .navbar ul li a {
+}
+.navbar ul li a {
     text-decoration: none;
     color: white;
     transition: color 0.3s ease;
-  }
-  .navbar ul li a:hover {
+}
+.navbar ul li a:hover {
     color: #ddd;
-  }
+}
 
-  footer {
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+}
+
+
+footer {
     background-color: #333; /* Color de fondo del pie de página */
     color: #fff; /* Color del texto */
-    padding: 20px 0; /* Espaciado interno */
-}
-
+    padding: 20px 0; /* Espaciado interno */}
 .footer-container {
     display: flex; /* Usa flexbox para alinear los elementos */
-    justify-content: space-around; /* Distribuye los elementos de manera uniforme */
-}
-
+    justify-content: space-around; /* Distribuye los elementos de manera uniforme */}
 .footer-section {
     flex: 1; /* Ocupa todo el espacio disponible */
     margin-right: 20px; /* Espaciado entre las secciones */
