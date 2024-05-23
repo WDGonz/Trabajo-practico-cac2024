@@ -4,16 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PortátilPro</title>
-<link
-	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-	rel="stylesheet"
-	integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-	crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-	href="https://fonts.googleapis.com/css2?family=Rationale&display=swap"
-	rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rationale&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/contacto.css">
 </head>
 <body>
@@ -25,20 +19,14 @@
 						<img src="../multimedia/Portatilpro3.jpeg" alt="Logo" height="50">
 						<h1>PortatilPro</h1>
 					</div>
-					<button class="navbar-toggler" type="button"
-						data-bs-toggle="collapse" data-bs-target="#navbarNav"
-						aria-controls="navbarNav" aria-expanded="false"
-						aria-label="Toggle navigation">
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
 					<div class="collapse navbar-collapse" id="navbarNav">
 						<ul class="navbar-nav ms-auto">
-							<li class="nav-item"><a class="nav-link"
-								href="../index.html">Home</a></li>
-							<li class="nav-item"><a class="nav-link"
-								href="../pages/Productos.html">Productos</a></li>
-							<li class="nav-item"><a class="nav-link"
-								href="../pages/sobrenos.html">Sobre Nosotros</a></li>
+							<li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="../pages/Productos.html">Productos</a></li>
+							<li class="nav-item"><a class="nav-link" href="../pages/sobrenos.html">Sobre Nosotros</a></li>
 						</ul>
 					</div>
 				</div>
@@ -49,23 +37,19 @@
 			<div class="col-md-9">
 				<fieldset>
 					<legend>Formulario de Contacto</legend>
-					<form>
+					<form id="contactForm">
 						<div class="mb-3">
-							<label for="nombre" class="form-label">Nombre:</label> <input
-								type="text" class="form-control" id="nombre" name="nombre"
-								required>
+							<label for="nombre" class="form-label">Nombre:</label> 
+                            <input type="text" class="form-control" id="nombre" name="nombre">
 						</div>
 						<div class="mb-3">
-							<label for="exampleInputEmail1" class="form-label">Correo
-								electrónico</label> <input type="email" class="form-control"
-								id="exampleInputEmail1" aria-describedby="emailHelp" required>
+							<label for="exampleInputEmail1" class="form-label">Correo electrónico</label> 
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
 						</div>
 						<div class="mb-3">
-							<label for="provincia" class="form-label">Provincia:</label> <select
-								class="form-select" aria-label="Default select example"
-								id="provincia" name="provincia" required>
-								<option value="" disabled selected>Selecciona tu
-									provincia</option>
+							<label for="provincia" class="form-label">Provincia:</label> 
+                            <select class="form-select" aria-label="Default select example" id="provincia" name="provincia">
+								<option value="" disabled selected>Selecciona tu provincia</option>
 								<option value="Buenos Aires">Buenos Aires</option>
 								<option value="CABA">Ciudad Autónoma de Buenos Aires</option>
 								<option value="Jujuy">Jujuy</option>
@@ -74,22 +58,18 @@
 							</select>
 						</div>
 						<div class="mb-3">
-							<label for="direccion" class="form-label">Dirección:</label> <input
-								type="text" id="direccion" name="direccion" class="form-control"
-								required>
-							<div id="emailHelp" class="form-text">Nunca compartiremos
-								tu correo electrónico con cualquier otra persona.</div>
+							<label for="direccion" class="form-label">Dirección:</label> 
+                            <input type="text" id="direccion" name="direccion" class="form-control">
+							<div id="emailHelp" class="form-text">Nunca compartiremos tu correo electrónico con cualquier otra persona.</div>
 						</div>
 						<div class="mb-3">
-							<label for="telefono" class="form-label">Teléfono:</label> <input
-								type="tel" id="telefono" name="telefono" class="form-control">
+							<label for="telefono" class="form-label">Teléfono:</label> 
+                            <input type="tel" id="telefono" name="telefono" class="form-control">
 						</div>
 						<div class="mb-3">
-							<label for="motivo" class="form-label">Motivo de
-								Consulta:</label> <select id="motivo" name="motivo" required
-								class="form-select" aria-label="Default select example">
-								<option value="" disabled selected>Selecciona el motivo
-									de tu consulta</option>
+							<label for="motivo" class="form-label">Motivo de Consulta:</label> 
+                            <select id="motivo" name="motivo" class="form-select" aria-label="Default select example">
+								<option value="" disabled selected>Selecciona el motivo de tu consulta</option>
 								<option value="Consulta General">Consulta General</option>
 								<option value="Soporte Técnico">Soporte Técnico</option>
 								<option value="Sugerencia">Sugerencia</option>
@@ -97,8 +77,7 @@
 							</select>
 						</div>
 						<div class="form-floating mb-3">
-							<textarea class="form-control" id="floatingTextarea"
-								id="observaciones" name="observaciones" rows="4"></textarea>
+							<textarea class="form-control" id="floatingTextarea" name="observaciones" rows="4"></textarea>
 							<label for="floatingTextarea">Observaciones</label>
 						</div>
 						<button type="submit" class="btn btn-success btn-lg">Enviar</button>
@@ -134,16 +113,12 @@
 				</div>
 			</div>
 			<div class="col-12 postfooter text-center">
-				<p>
-					TRABAJO FINAL INTEGRADOR · BUENOS AIRES APRENDE · <span>&copy; 2024</span> · GONZALEZ - MARTINEZ - PUIG - SARAVIA
-				</p>
+				<p>TRABAJO FINAL INTEGRADOR · BUENOS AIRES APRENDE · <span>&copy; 2024</span> · GONZALEZ - MARTINEZ - PUIG - SARAVIA</p>
 			</div>
 		</footer>
 	</div>
 
-	<script
-		src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	<script src="../js/formulario.js"></script>
 </body>
 </html>
