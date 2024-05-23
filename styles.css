@@ -47,50 +47,26 @@ header {
 
 .hero {
     position: relative;
-    width: 100%;
-    height: 400px; /* Altura del segmento hero */
-    overflow: hidden; /* Oculta el contenido que exceda del área */
+    height: 100vh;
+    overflow: hidden;
 }
-
-.carousel {
-    display: flex;
+.hero video {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
-
-.slide {
-    flex: 1;
-    position: relative;
-    transition: transform 0.5s ease; /* Animación de transición */
-}
-
-.slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ajusta la imagen para cubrir todo el espacio */
-}
-
-.caption {
+.hero-text {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para el texto */
-    color: #fff;
-    padding: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    animation: text-animation 5s infinite alternate;
 }
-
-.active {
-    transform: translateX(0);
-}
-
-/* Configuración del carrusel para la reproducción automática */
-@keyframes slideAnimation {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
-}
-
-.carousel {
-    animation: slideAnimation 5s infinite alternate; /* Reproduce el carrusel automáticamente */
+@keyframes text-animation {
+    from { transform: translate(-50%, -30%); }
+    to { transform: translate(-50%, -70%); }
 }
 
 .payment-promotions {
