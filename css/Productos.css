@@ -81,13 +81,19 @@ footer {
 
 .footer-section ul li {
     margin-bottom: 10px; /* Espaciado entre elementos de la lista */
+    color: rgb(241, 237, 237);
+    transition: color 0.3s ease;
 }
+
 .flinks{
     color:#fff;
     text-decoration: none;
-    color: rgb(247, 241, 241);
-    transition: color 0.3s ease;
 }
+
+.flinks:hover {
+    color: #706c6c; /* Cambia el color a rojo al pasar el ratón */
+}
+
 .social-icons {
     display: flex; /* Usa flexbox para alinear los íconos */
     padding: 0;
