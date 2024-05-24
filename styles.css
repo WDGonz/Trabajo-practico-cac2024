@@ -42,7 +42,7 @@ header {
     transition: color 0.3s ease;
   }
   .navbar ul li a:hover {
-    color: #ddd;
+    color: #706c6c;
   }
 
 .hero {
