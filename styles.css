@@ -131,12 +131,13 @@ footer {
 
 .footer-section ul li {
     margin-bottom: 10px; /* Espaciado entre elementos de la lista */
+    color: rgb(247, 241, 241);
+    transition: color 0.3s ease;
 }
+
 .flinks{
     color:#fff;
     text-decoration: none;
-    color: rgb(247, 241, 241);
-    transition: color 0.3s ease;
 }
 
 
