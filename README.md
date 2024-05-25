@@ -1,27 +1,31 @@
-Trabajo Practico integrador de Buenos Aires Aprende 2024 para Desarrollo Web Fullstack Nodejs
+Trabajo Practico integrador de Buenos Aires Aprende 2024 (ex Codo a Codo) para Desarrollo Web Fullstack Nodejs
 
 Se crea un sitio de e-comerce destinado a la venta de laptops,trabajo creado en conjunto por:
+Walter Daniel Gonzalez, Emilio Martinez, Pablo Puig y Jorge Ariel Saravia 
 
-Walter Daniel Gonzalez, Emilio Martinez, Pablo Puig y Jorge Ariel Saravia cumpliendo con las 
-siguientes consignas:
+Se creaaron 4 secciones : Home, Productos, Contacto y Sobre Nosotros 
+Se genera un formulario de contacto con validacion de datos mediante alert en pantalla
+Adoptando para la maquetacion Flexbok
 
-1. Contenido
+Este trabajo debia cunplir con las siguientes consignas:
+
+. Contenido
 
 ● Si el diseño es por páginas: al menos
 4 páginas HTML, con temáticas de
 libre elección.
 
-2. Etiquetas semánticas
+. Etiquetas semánticas
 
 ● Utilizar etiquetas semánticas para
 estructurar el contenido del sitio.
 
-3. Formulario
+. Formulario
 
 ● Incluir un formulario de contacto
 con validación mediante JavaScript.
 
-4. Diseño estético
+ Diseño estético
 
 Incorporar al menos:
 ● Un Iframe,
@@ -30,7 +34,7 @@ similar,
 ● Fuentes locales, de Google Fonts u
 otro similar.
 
-5. Diseño responsive
+ Diseño responsive
 
 Incluir:
 ● Al menos una página
@@ -42,7 +46,7 @@ vea correctamente en diversos
 dispositivos, brindando una
 experiencia óptima a los usuarios.
 
-6. Dinamismo visual
+ Dinamismo visual
 
 Introducir al menos una animación:
 
@@ -54,23 +58,14 @@ animación).
 ● Pueden utilizar librerías externas si
 lo desean.
 
-7. Maquetación
+ Maquetación
 
 La estructura HTML deberá estar
 asociada a estilos CSS3, como parte
 del diseño se incluirá Flexbox y/o
 Grid.
 
-8. API
-
-Solicitudes
-● Realizar una solicitud a una API Rest
-desde JavaScript.
-● Debes indicar la API que usaste al
-momento de presentar el Trabajo
-Práctico Obligatorio.
-
-9. Framework de CSS
+ Framework de CSS
 
 ● En caso de querer usar Bootstrap (no
 obligatorio), solo podrán emplearlo en
@@ -85,7 +80,7 @@ obtenidos de estos frameworks.
 trabajo práctico será considerado no
 válido.
 
-10.Publicación y GIT
+Publicación y GIT
 
 ● La página web debe ser cargada en
 un servidor en línea para que el
