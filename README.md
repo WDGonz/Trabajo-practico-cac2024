@@ -9,18 +9,18 @@ Adoptando para la maquetacion Flexbok
 
 Este trabajo debia cunplir con las siguientes consignas:
 
-. Contenido
+Contenido
 
 ● Si el diseño es por páginas: al menos
 4 páginas HTML, con temáticas de
 libre elección.
 
-. Etiquetas semánticas
+ Etiquetas semánticas
 
 ● Utilizar etiquetas semánticas para
 estructurar el contenido del sitio.
 
-. Formulario
+ Formulario
 
 ● Incluir un formulario de contacto
 con validación mediante JavaScript.
