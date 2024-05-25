@@ -5,7 +5,7 @@ Walter Daniel Gonzalez, Emilio Martinez, Pablo Puig y Jorge Ariel Saravia
 
 Se creaaron 4 secciones : Home, Productos, Contacto y Sobre Nosotros 
 Se genera un formulario de contacto con validacion de datos mediante alert en pantalla
-Adoptando para la maquetacion Flexbok
+Adoptando para la maquetacion Flexbox
 
 Este trabajo debia cunplir con las siguientes consignas:
 
