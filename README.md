@@ -10,9 +10,6 @@ siguientes consignas:
 ● Si el diseño es por páginas: al menos
 4 páginas HTML, con temáticas de
 libre elección.
-● Si el diseño es un estilo de página
-única (One Page): se requiere que
-contenga al menos 4 secciones.
 
 2. Etiquetas semánticas
 
@@ -23,10 +20,6 @@ estructurar el contenido del sitio.
 
 ● Incluir un formulario de contacto
 con validación mediante JavaScript.
-● Como opción adicional, el formulario
-puede enviar un correo electrónico
-utilizando un servicio externo de
-correo.
 
 4. Diseño estético
 
@@ -52,10 +45,12 @@ experiencia óptima a los usuarios.
 6. Dinamismo visual
 
 Introducir al menos una animación:
+
 ● Transformación o transición en
 algún punto del sitio web (deberás
 indicar dónde se implementó la
 animación).
+
 ● Pueden utilizar librerías externas si
 lo desean.
 
