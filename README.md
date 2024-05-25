@@ -4,8 +4,8 @@ Se crea un sitio de e-comerce destinado a la venta de laptops,trabajo creado en 
 Walter Daniel Gonzalez, Emilio Martinez, Pablo Puig y Jorge Ariel Saravia 
 
 Se creaaron 4 secciones : Home, Productos, Contacto y Sobre Nosotros 
-Se genera un formulario de contacto con validacion de datos mediante alert en pantalla
-Adoptando para la maquetacion Flexbox
+Se genera un formulario de contacto con validacion de datos con Javascipt mediante alert en pantalla
+Adoptando para la maquetacion Flexbox.
 
 Este trabajo debia cunplir con las siguientes consignas:
 
