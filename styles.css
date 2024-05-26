@@ -1,3 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #333;
+    height: 5rem;
+}
+
+.logo {
+    max-width: 5rem;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.navbar ul li a:hover {
+    color: #706c6c;
+  }
+
+  .efecto {
+    color: #34495e;
+    font-weight: 700;
+  }
+
 body {
     background-color: darkgrey;
     font-family:"Rationale", sans-serif;
@@ -11,39 +51,6 @@ body {
     font-weight: 400;
     font-style: normal;
 }
-  
-header {
-    background-color: #333; /* Color de fondo de la barra de navegación */
-    padding: 10px 0; /* Espaciado interno */
-}
-
-.navbar {
-    display: flex;
-    background-color: #333;
-    color: white;
-    align-items: center;
-    padding: 10px;
-  }
-  .navbar-logo {
-    margin-right: auto;
-  }
-  .navbar ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-  }
-  .navbar ul li {
-    padding: 0 20px;
-  }
-  .navbar ul li a {
-    text-decoration: none;
-    color: white;
-    transition: color 0.3s ease;
-  }
-  .navbar ul li a:hover {
-    color: #706c6c;
-  }
 
 .hero {
     position: relative;
