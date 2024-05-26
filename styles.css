@@ -146,7 +146,6 @@ footer {
 .flinks:hover {
     color: #706c6c; /* Cambia el color a rojo al pasar el ratón */
 }
-
 .social-icons {
     display: flex; /* Usa flexbox para alinear los íconos */
     padding: 0;
