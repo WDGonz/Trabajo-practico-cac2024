@@ -45,6 +45,18 @@ header {
     color: #706c6c;
 }
 
+#formulario-compra {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(233, 230, 230, 0.7);
+}
+
 .slideshow-container {
     max-width: 100%;
     position: relative;
