@@ -52,6 +52,65 @@
 							  FX506LHB-HN324W i5 16GB 512GB GTX1650
 							</p>
 							<a href="#" class="btn btn-primary" id="btn-comprar">Comprar</a>
+							<div id="formulario-compra" style="display: none;">
+								<form action="procesar_formulario.php" method="POST">
+									<!-- Etapa 1: Datos personales -->
+									<label for="nombre">Nombre:</label>
+									<input type="text" id="nombre" name="nombre" required>
+									<br>
+									<label for="apellido">Apellido:</label>
+									<input type="text" id="apellido" name="apellido" required>
+									<br>
+									<label for="email">Email:</label>
+									<input type="email" id="email" name="email" required>
+									<br>
+							
+									<!-- Etapa 2: Detalles del producto -->
+									<label for="producto">Producto:</label>
+									<input type="text" id="producto" name="producto" required>
+									<select id="producto" name="producto" required>
+									  <option value="opcion1">Notebook Gamer ASUS TUF Gaming F15</option>
+									  <option value="opcion2">Notebook Msi Modern</option>
+									  <option value="opcion1">Notebook Gamer Bangho</option>
+									  <option value="opcion2">Notebook Asus X515EA</option>
+									  <option value="opcion1">Notebook Samsung Galaxy Np750 Book3</option>
+									  <option value="opcion2">Notebook Gigabyte G5</option>
+									  <option value="opcion1">Notebook Hp 255 G9</option>
+									  <option value="opcion2">Notebook Lenovo Lenovo V15</option>
+									  <option value="opcion1">Apple Macbook Pro A1990</option>
+								  </select>
+									<br>
+									<label for="cantidad">Cantidad:</label>
+									<input type="number" id="cantidad" name="cantidad" required>
+									<br>
+									<label for="otro-producto">Otro Producto:</label>
+									<input type="text" id="otro-producto" name="otro-producto" required>
+									<select id="otro-producto" name="otro-producto" required>
+									  <option value="opcion1">Notebook Gamer ASUS TUF Gaming F15</option>
+									  <option value="opcion2">Notebook Msi Modern</option>
+									  <option value="opcion1">Notebook Gamer Bangho</option>
+									  <option value="opcion2">Notebook Asus X515EA</option>
+									  <option value="opcion1">Notebook Samsung Galaxy Np750 Book3</option>
+									  <option value="opcion2">Notebook Gigabyte G5</option>
+									  <option value="opcion1">Notebook Hp 255 G9</option>
+									  <option value="opcion2">Notebook Lenovo Lenovo V15</option>
+									  <option value="opcion1">Apple Macbook Pro A1990</option>
+								  </select>
+									<br>
+									<label for="cantidad">Cantidad:</label>
+									<input type="number" id="cantidad" name="cantidad" required>
+									<br>
+							
+									<!-- Etapa 3: Dirección de envío -->
+									<label for="direccion">Dirección de envío:</label>
+									<textarea id="direccion" name="direccion" rows="4" required></textarea>
+									<br>
+							
+									<!-- Botón de envío -->
+									<input type="submit" value="Enviar">
+								</form>
+							</div>
+						  
 						  </div>
 						</div>
 					  </div>
