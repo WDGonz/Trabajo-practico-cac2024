@@ -54,7 +54,11 @@ header {
     bottom: 0;
     right: 0;
     left: 0;
-    background: rgba(233, 230, 230, 0.7);
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno para evitar que el contenido toque los bordes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para un mejor efecto visual */
+    background: rgb(2,40,41);
+    background: linear-gradient(0deg, rgba(2,40,41,1) 0%, rgba(251,222,55,1) 0%, rgba(207,205,217,1) 0%, rgba(80,150,245,1) 0%, rgba(224,227,94,1) 0%, rgba(180,230,92,1) 27%, rgba(117,227,24,0.9192051820728291) 62%);
 }
 #formulario-compra2 {
     display: flex;
@@ -65,7 +69,11 @@ header {
     bottom: 0;
     right: 0;
     left: 0;
-    background: rgba(233, 230, 230, 0.7);
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno para evitar que el contenido toque los bordes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para un mejor efecto visual */
+    background: rgb(2,40,41);
+    background: linear-gradient(0deg, rgba(2,40,41,1) 0%, rgba(251,222,55,1) 0%, rgba(207,205,217,1) 0%, rgba(80,150,245,1) 0%, rgba(224,227,94,1) 0%, rgba(180,230,92,1) 27%, rgba(117,227,24,0.9192051820728291) 62%);
 }
 #formulario-compra3 {
     display: flex;
@@ -76,7 +84,11 @@ header {
     bottom: 0;
     right: 0;
     left: 0;
-    background: rgba(233, 230, 230, 0.7);
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno para evitar que el contenido toque los bordes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para un mejor efecto visual */
+    background: rgb(2,40,41);
+    background: linear-gradient(0deg, rgba(2,40,41,1) 0%, rgba(251,222,55,1) 0%, rgba(207,205,217,1) 0%, rgba(80,150,245,1) 0%, rgba(224,227,94,1) 0%, rgba(180,230,92,1) 27%, rgba(117,227,24,0.9192051820728291) 62%);;
 }
 #formulario-compra4 {
     display: flex;
@@ -87,7 +99,11 @@ header {
     bottom: 0;
     right: 0;
     left: 0;
-    background: rgba(233, 230, 230, 0.7);
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno para evitar que el contenido toque los bordes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para un mejor efecto visual */
+    background: rgb(2,40,41);
+    background: linear-gradient(0deg, rgba(2,40,41,1) 0%, rgba(251,222,55,1) 0%, rgba(207,205,217,1) 0%, rgba(80,150,245,1) 0%, rgba(224,227,94,1) 0%, rgba(180,230,92,1) 27%, rgba(117,227,24,0.9192051820728291) 62%);
 }
 #formulario-compra5 {
     display: flex;
@@ -98,7 +114,11 @@ header {
     bottom: 0;
     right: 0;
     left: 0;
-    background: rgba(233, 230, 230, 0.7);
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno para evitar que el contenido toque los bordes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para un mejor efecto visual */
+    background: rgb(2,40,41);
+    background: linear-gradient(0deg, rgba(2,40,41,1) 0%, rgba(251,222,55,1) 0%, rgba(207,205,217,1) 0%, rgba(80,150,245,1) 0%, rgba(224,227,94,1) 0%, rgba(180,230,92,1) 27%, rgba(117,227,24,0.9192051820728291) 62%);
 }
 #formulario-compra6 {
     display: flex;
@@ -109,7 +129,11 @@ header {
     bottom: 0;
     right: 0;
     left: 0;
-    background: rgba(233, 230, 230, 0.7);
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno para evitar que el contenido toque los bordes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para un mejor efecto visual */
+    background: rgb(2,40,41);
+    background: linear-gradient(0deg, rgba(2,40,41,1) 0%, rgba(251,222,55,1) 0%, rgba(207,205,217,1) 0%, rgba(80,150,245,1) 0%, rgba(224,227,94,1) 0%, rgba(180,230,92,1) 27%, rgba(117,227,24,0.9192051820728291) 62%);
 }
 #formulario-compra7 {
     display: flex;
@@ -120,7 +144,11 @@ header {
     bottom: 0;
     right: 0;
     left: 0;
-    background: rgba(233, 230, 230, 0.7);
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno para evitar que el contenido toque los bordes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para un mejor efecto visual */
+    background: rgb(2,40,41);
+    background: linear-gradient(0deg, rgba(2,40,41,1) 0%, rgba(251,222,55,1) 0%, rgba(207,205,217,1) 0%, rgba(80,150,245,1) 0%, rgba(224,227,94,1) 0%, rgba(180,230,92,1) 27%, rgba(117,227,24,0.9192051820728291) 62%);
 }
 #formulario-compra8 {
     display: flex;
@@ -131,7 +159,11 @@ header {
     bottom: 0;
     right: 0;
     left: 0;
-    background: rgba(233, 230, 230, 0.7);
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno para evitar que el contenido toque los bordes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para un mejor efecto visual */
+    background: rgb(2,40,41);
+    background: linear-gradient(0deg, rgba(2,40,41,1) 0%, rgba(251,222,55,1) 0%, rgba(207,205,217,1) 0%, rgba(80,150,245,1) 0%, rgba(224,227,94,1) 0%, rgba(180,230,92,1) 27%, rgba(117,227,24,0.9192051820728291) 62%);
 }
 #formulario-compra9 {
     display: flex;
@@ -142,7 +174,11 @@ header {
     bottom: 0;
     right: 0;
     left: 0;
-    background: rgba(233, 230, 230, 0.7);
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno para evitar que el contenido toque los bordes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para un mejor efecto visual */
+    background: rgb(2,40,41);
+    background: linear-gradient(0deg, rgba(2,40,41,1) 0%, rgba(251,222,55,1) 0%, rgba(207,205,217,1) 0%, rgba(80,150,245,1) 0%, rgba(224,227,94,1) 0%, rgba(180,230,92,1) 27%, rgba(117,227,24,0.9192051820728291) 62%);
 }
 
 
