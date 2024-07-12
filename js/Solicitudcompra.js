@@ -32,7 +32,9 @@ async function enviarFormulario(event) {
     } else {
       alert('Error al enviar el pedido.');
     }
-  }
+  };
+  
+
 const btnComprar2 = document.getElementById("btn-comprar2");
 const formularioCompra2 = document.getElementById("formulario-compra2");
 
