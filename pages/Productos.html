@@ -53,7 +53,7 @@
 							</p>
 							<a href="#" class="btn btn-primary" id="btn-comprar">Comprar</a>
 							<div id="formulario-compra" style="display: none;">
-								<form action="/enviar" method="POST">
+								<form id="pedidoForm" onsubmit="enviarFormulario(event)">
 									<!-- Etapa 1: Datos personales -->
 									<label for="nombre">Nombre:</label>
 									<input type="text" id="nombre" name="nombre" required>
