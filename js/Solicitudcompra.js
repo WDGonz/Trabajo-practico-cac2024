@@ -6,43 +6,13 @@ btnComprar.addEventListener("click", () => {
     formularioCompra.style.display = "block";
 });
 
-// Procesamiento de formulario 
-async function enviarFormulario(event) {
-    event.preventDefault();
-
-    const token = localStorage.getItem('token');
-    const headers = new Headers();
-    headers.append('Content-Type', 'application/json');
-    headers.append('Authorization', `Bearer ${token}`);
-
-    const data = {
-      producto: document.getElementById('producto').value,
-      cantidad: document.getElementById('cantidad').value,
-      otroProducto: document.getElementById('otro-producto').value,
-      otraCantidad: document.getElementById('cantidad').value,
-      direccion: document.getElementById('direccion').value,
-    };
-
-    const response = await fetch('/enviar', {
-      method: 'POST',
-      headers: headers,
-      body: JSON.stringify(data),
-    });
-
-    if (response.ok) {
-      alert('Pedido enviado exitosamente.');
-    } else {
-      alert('Error al enviar el pedido.');
-    }
-  };
-
-
 const btnComprar2 = document.getElementById("btn-comprar2");
 const formularioCompra2 = document.getElementById("formulario-compra2");
 
 btnComprar2.addEventListener("click", () => {
 formularioCompra2.style.display = "block";
 });
+
 
 const btnComprar3 = document.getElementById("btn-comprar3");
 const formularioCompra3 = document.getElementById("formulario-compra3");
@@ -92,3 +62,33 @@ const formularioCompra9 = document.getElementById("formulario-compra9");
 btnComprar9.addEventListener("click", () => {
 formularioCompra9.style.display = "block";
 });
+
+// Procesamiento de formulario 
+async function enviarFormulario(event) {
+    event.preventDefault();
+
+    const token = localStorage.getItem('token');
+    const headers = new Headers();
+    headers.append('Content-Type', 'application/json');
+    headers.append('Authorization', `Bearer ${token}`);
+
+    const data = {
+      producto: document.getElementById('producto').value,
+      cantidad: document.getElementById('cantidad').value,
+      otroProducto: document.getElementById('otro-producto').value,
+      otraCantidad: document.getElementById('cantidad').value,
+      direccion: document.getElementById('direccion').value,
+    };
+
+    const response = await fetch('/enviar', {
+      method: 'POST',
+      headers: headers,
+      body: JSON.stringify(data),
+    });
+
+    if (response.ok) {
+      alert('Pedido enviado exitosamente.');
+    } else {
+      alert('Error al enviar el pedido.');
+    }
+  };
