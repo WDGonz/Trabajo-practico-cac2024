@@ -64,32 +64,63 @@ formularioCompra9.style.display = "block";
 });
 
 // Procesamiento de formulario 
+let token = '';
+
+async function login(event) {
+    event.preventDefault();
+    
+    const form = document.getElementById('loginForm');
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+    
+    try {
+        const response = await fetch('http://localhost:3000/auth/login', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        });
+        
+        if (response.ok) {
+            const result = await response.json();
+            token = result.token;
+            document.getElementById('pedidoForm').style.display = 'block';
+            document.getElementById('loginForm').style.display = 'none';
+        } else {
+            alert('Error al iniciar sesión');
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        alert('Hubo un error al iniciar sesión');
+    }
+}
+
 async function enviarFormulario(event) {
     event.preventDefault();
-
-    const token = localStorage.getItem('token');
-    const headers = new Headers();
-    headers.append('Content-Type', 'application/json');
-    headers.append('Authorization', `Bearer ${token}`);
-
-    const data = {
-      producto: document.getElementById('producto').value,
-      cantidad: document.getElementById('cantidad').value,
-      otroProducto: document.getElementById('otro-producto').value,
-      otraCantidad: document.getElementById('cantidad').value,
-      direccion: document.getElementById('direccion').value,
-    };
-
-    const response = await fetch('/enviar', {
-      method: 'POST',
-      headers: headers,
-      body: JSON.stringify(data),
-    });
-
-    if (response.ok) {
-      alert('Pedido enviado exitosamente.');
-    } else {
-      alert('Error al enviar el pedido.');
+    
+    const form = document.getElementById('pedidoForm');
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+    
+    try {
+        const response = await fetch('http://localhost:3000/clientes/pedido', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': token
+            },
+            body: JSON.stringify(data)
+        });
+        
+        if (response.ok) {
+            const result = await response.json();
+            alert(result.message);
+        } else {
+            alert('Error al enviar el pedido');
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        alert('Hubo un error al enviar el formulario');
     }
-  };
-  
+}
