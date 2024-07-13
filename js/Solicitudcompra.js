@@ -5,6 +5,8 @@ const formularioCompra = document.getElementById("formulario-compra");
 btnComprar.addEventListener("click", () => {
     formularioCompra.style.display = "block";
 });
+
+// Procesamiento de formulario 
 async function enviarFormulario(event) {
     event.preventDefault();
 
@@ -33,7 +35,7 @@ async function enviarFormulario(event) {
       alert('Error al enviar el pedido.');
     }
   };
-  
+
 
 const btnComprar2 = document.getElementById("btn-comprar2");
 const formularioCompra2 = document.getElementById("formulario-compra2");
