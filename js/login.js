@@ -1,8 +1,8 @@
 const login = document.getElementById("login");
-const  loginSection= document.getElementById("loginSection");
+const  loginForm= document.getElementById("loginForm");
 
-login.addEventListener("click", () => {
-    loginSection.style.display = "block";
+loginForm.addEventListener("click", () => {
+    loginForm.style.display = "block";
 });
 
 function login(event) {
@@ -16,9 +16,9 @@ function login(event) {
 
     // Por ejemplo, podrías enviar los datos a un servidor
 
-fetch('/login', {
-method: 'POST',
-headers: {
+      fetch('/login', {
+      method: 'POST',
+      headers: {
            'Content-Type': 'application/json',
 },
 
