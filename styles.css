@@ -45,6 +45,42 @@ header {
 .navbar ul li a:hover {
     color:#706c6c;
 }
+/* Estilos para el formulario */
+#loginSection {
+    margin-top: 50px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f9f9f9;
+}
+
+#loginForm label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+#loginForm input[type="text"],
+#loginForm input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#loginForm input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#loginForm input[type="submit"]:hover {
+    background-color: #45a049;
+}
 
 .hero {
     position: relative;

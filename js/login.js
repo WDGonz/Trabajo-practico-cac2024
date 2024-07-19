@@ -1,3 +1,10 @@
+const login = document.getElementById("login");
+const  loginSection= document.getElementById("loginSection");
+
+login.addEventListener("click", () => {
+    loginSection.style.display = "block";
+});
+
 function login(event) {
     event.preventDefault();
     const username = document.getElementById('username').value;
