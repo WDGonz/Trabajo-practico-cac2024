@@ -1,38 +1,21 @@
-const login = document.getElementById("login");
-const  loginForm= document.getElementById("loginForm");
+document.addEventListener('DOMContentLoaded', function() {
+  const loginFormLink = document.getElementById('loginFormLink');
+  const loginForm = document.getElementById('loginForm');
+  const closeLoginFormButton = document.getElementById('closeLoginForm');
 
-loginForm.addEventListener("click", () => {
-    loginForm.style.display = "block";
+  loginFormLink.addEventListener('click', function(event) {
+      event.preventDefault();
+      loginForm.style.display = 'block';
+  });
+
+  closeLoginFormButton.addEventListener('click', function() {
+      loginForm.style.display = 'none';
+  });
+
+  // Opcional: puedes agregar un evento para cerrar el formulario al hacer clic fuera de él
+  window.addEventListener('click', function(event) {
+      if (event.target == loginForm) {
+          loginForm.style.display = 'none';
+      }
+  });
 });
-
-function login(event) {
-    event.preventDefault();
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
-
-    // Aquí puedes añadir la lógica de autenticación
-    console.log('Usuario:', username);
-    console.log('Contraseña:', password);
-
-    // Por ejemplo, podrías enviar los datos a un servidor
-
-      fetch('/login', {
-      method: 'POST',
-      headers: {
-           'Content-Type': 'application/json',
-},
-
-body: JSON.stringify({ username, password }),
-})
-.then(response => response.json())
-.then(data => {
-  if (data.success) {
-
-} else {
-
-}
-})
-.catch((error) => {
-console.error('Error:', error);
-});
-}
