@@ -49,11 +49,14 @@ header {
 
 /* Estilos para el formulario de ingreso */
 .login-form {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
     position: fixed;
-    top: 50%;
-    left: 50%;
-    right: 50%;
-    bottom: 50%;
+    top: 5%;
+    bottom: 5%;
+    right: 15%;
+    left: 15%;
     transform: translate(-50%, -50%);
     background: rgb(2,40,41);
     background: linear-gradient(0deg, rgba(2,40,41,1) 0%, rgba(251,222,55,1) 0%, rgba(207,205,217,1) 0%, rgba(80,150,245,1) 0%, rgba(224,227,94,1) 0%, rgba(180,230,92,1) 27%, rgba(117,227,24,0.9192051820728291) 62%);
