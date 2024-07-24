@@ -30,6 +30,18 @@
             </ul>
           </nav>              
     </header>
+            <!-- Formulario de Ingreso -->
+            <div id="loginForm" class="login-form" style="display: none;">
+              <form id="loginFormContent">
+                  <h2>Ingresar</h2>
+                  <label for="username">Usuario:</label>
+                  <input type="text" id="username" name="username" required>
+                  <label for="password">Contraseña:</label>
+                  <input type="password" id="password" name="password" required>
+                  <button type="submit">Ingresar</button>
+                  <button type="button" id="closeLoginForm">Cerrar</button>
+              </form>
+          </div>
     <div class="container">
         <h1>Conoce a Nuestro equipo de trabajo</h1>
         <div id="developerCarousel" class="carousel">
@@ -240,5 +252,6 @@ Sin embargo, actualmente he decidido dar vuela la página e incursionar en el ar
    </div>
    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
      <script src="../js/scripts.js"></script>
+     <script src="../js/login.js"></script>
 </body>
 </html>
