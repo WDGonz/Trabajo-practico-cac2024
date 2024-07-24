@@ -81,13 +81,13 @@ header {
     padding: 10px;
     border: none;
     border-radius: 3px;
-    background-color: gray;
+    background-color:#706c6c;
     color: rgb(15, 15, 15);
     cursor: pointer;
 }
 
 .login-form button:hover {
-    background-color: #0056b3;
+    background-color: #706c6c;
 }
 
 .hero {
