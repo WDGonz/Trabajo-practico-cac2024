@@ -6,6 +6,25 @@ body {
     margin: 0;
     padding: 0;
 }
+
+body > .container-fluid {
+    --bs-gutter-x: 0;
+    min-height: 100vh;
+    padding: 0 24px 32px;
+    background:
+        radial-gradient(circle at 10% 15%, rgba(190, 242, 100, 0.32), transparent 24rem),
+        radial-gradient(circle at 90% 60%, rgba(132, 204, 22, 0.16), transparent 22rem),
+        linear-gradient(145deg, #ecfccb 0%, #f7fee7 58%, #d9f99d 100%);
+}
+
+body > .container-fluid > main {
+    width: min(1180px, 100%);
+    margin: 32px auto 0;
+}
+
+body > .container-fluid > main > section {
+    --bs-gutter-x: 24px;
+}
 .rationale-regular {
     font-family: "Rationale", sans-serif;
     font-weight: 400;
@@ -246,6 +265,27 @@ label:hover {
 .slide {
     display: none;
     width: 100%;
+}
+
+@media (max-width: 991px) {
+    body > .container-fluid {
+        padding-inline: 16px;
+    }
+
+    body > .container-fluid > main {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    body > .container-fluid {
+        padding-inline: 10px;
+        padding-bottom: 20px;
+    }
+
+    body > .container-fluid > main {
+        margin-top: 12px;
+    }
 }
 
 footer {
