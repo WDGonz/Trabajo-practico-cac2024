@@ -52,20 +52,22 @@
 					</form>
 				</div>
 
-		 <section class="row">
-            <div class="col-md-9">
-                <fieldset>
-                    <legend>Formulario de Contacto</legend>
+		 <section class="row contact-layout">
+            <div class="col-md-8 contact-form-column">
+                <h2 class="contact-form-heading">Formulario de contacto</h2>
+                <fieldset class="contact-card">
+                    <p class="contact-intro">Escribinos y te ayudaremos con tu consulta. Completá tus datos para que podamos responderte.</p>
                     <form id="contactForm">
-                        <div class="mb-3">
+                        <div class="contact-form-grid">
+                        <div class="mb-3 contact-field">
                             <label for="nombre" class="form-label">Nombre:</label> 
                             <input type="text" class="form-control" id="nombre" name="nombre">
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-3 contact-field">
                             <label for="exampleInputEmail1" class="form-label">Correo electrónico</label> 
                             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-3 contact-field">
                             <label for="provincia" class="form-label">Provincia:</label> 
                             <select class="form-select" aria-label="Default select example" id="provincia" name="provincia">
                                 <option value="" disabled selected>Selecciona tu provincia</option>
@@ -94,16 +96,16 @@
                                 <!-- Otras provincias aquí -->
                             </select>
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-3 contact-field">
                             <label for="direccion" class="form-label">Dirección:</label> 
                             <input type="text" id="direccion" name="direccion" class="form-control">
                             <div id="emailHelp" class="form-text">Nunca compartiremos tu correo electrónico con cualquier otra persona.</div>
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-3 contact-field">
                             <label for="telefono" class="form-label">Teléfono:</label> 
                             <input type="tel" id="telefono" name="telefono" class="form-control">
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-3 contact-field">
                             <label for="motivo" class="form-label">Motivo de Consulta:</label> 
                             <select id="motivo" name="motivo" class="form-select" aria-label="Default select example">
                                 <option value="" disabled selected>Selecciona el motivo de tu consulta</option>
@@ -113,15 +115,30 @@
                                 <!-- Otros motivos aquí -->
                             </select>
                         </div>
-                        <div class="form-floating mb-3">
+                        <div class="form-floating mb-3 contact-field contact-field-wide">
                             <textarea class="form-control" id="floatingTextarea" name="observaciones" rows="4"></textarea>
                             <label for="floatingTextarea">Observaciones</label>
                         </div>
-                        <button type="submit" class="btn btn-success btn-lg">Enviar</button>
+                        <button type="submit" class="btn btn-success btn-lg contact-submit">Enviar consulta</button>
+                        </div>
                     </form>
                 </fieldset>
             </div>
-            <div class="col-md-3 bg-success-subtle"></div>
+            <aside class="col-md-4 contact-help-column">
+                <div class="contact-help-card">
+                    <span class="contact-kicker">PortatilPro te escucha</span>
+                    <h2>¿En qué podemos ayudarte?</h2>
+                    <p>Consultanos por nuestros equipos, compras o soporte. Nuestro equipo está listo para orientarte.</p>
+                    <div class="contact-help-detail">
+                        <span class="contact-detail-icon" aria-hidden="true">@</span>
+                        <a href="mailto:PortatilPro@notebooks.com">PortatilPro@notebooks.com</a>
+                    </div>
+                    <div class="contact-help-detail">
+                        <span class="contact-detail-icon" aria-hidden="true">☎</span>
+                        <a href="tel:1234567890">123-456-7890</a>
+                    </div>
+                </div>
+            </aside>
         </section>
 
 		<footer class="row mt-2">

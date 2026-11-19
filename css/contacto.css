@@ -1,5 +1,7 @@
 body {
-    background-color: darkgrey;
+    background:
+        radial-gradient(circle at 12% 18%, rgba(190, 242, 100, 0.3), transparent 24rem),
+        linear-gradient(145deg, #ecfccb 0%, #d9f99d 52%, #bef264 100%);
     font-family:"Rationale", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -85,6 +87,199 @@ header {
 
 .login-form button:hover {
     background-color: #706c6c;
+}
+
+.contact-layout {
+    max-width: 1180px;
+    margin: 48px auto;
+    align-items: stretch;
+    --bs-gutter-x: 24px;
+    --bs-gutter-y: 24px;
+}
+
+.contact-form-column,
+.contact-help-column {
+    display: flex;
+}
+
+.contact-form-column {
+    flex-direction: column;
+}
+
+.contact-form-heading {
+    margin: 0 0 12px;
+    color: #172033;
+    font-size: clamp(1.7rem, 3vw, 2.25rem);
+    font-weight: 700;
+    letter-spacing: -0.035em;
+}
+
+.contact-card {
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: clamp(22px, 4vw, 42px);
+    border: 1px solid rgba(148, 163, 184, 0.22);
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.96);
+    box-shadow: 0 22px 55px rgba(15, 23, 42, 0.12);
+}
+
+.contact-intro {
+    max-width: 620px;
+    margin: 8px 0 28px;
+    color: #64748b;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.contact-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 18px;
+}
+
+.contact-field {
+    min-width: 0;
+    margin-bottom: 18px !important;
+}
+
+.contact-card .form-label {
+    margin-bottom: 7px;
+    color: #334155;
+    font-size: 0.92rem;
+    font-weight: 700;
+}
+
+.contact-card .form-control,
+.contact-card .form-select {
+    min-height: 48px;
+    border: 1px solid #dbe3ec;
+    border-radius: 12px;
+    background-color: #f8fafc;
+    color: #172033;
+    box-shadow: none;
+    transition: border-color 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
+}
+
+.contact-card textarea.form-control {
+    min-height: 132px;
+    resize: vertical;
+}
+
+.contact-card .form-control:focus,
+.contact-card .form-select:focus {
+    border-color: #8b5cf6;
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.12);
+}
+
+.contact-card .form-text {
+    color: #8491a4;
+    font-size: 0.8rem;
+}
+
+.contact-field-wide,
+.contact-submit {
+    grid-column: 1 / -1;
+}
+
+.contact-submit {
+    width: 100%;
+    min-height: 52px;
+    border: 0;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #7c3aed, #5b21b6);
+    font-weight: 700;
+    box-shadow: 0 10px 22px rgba(124, 58, 237, 0.24);
+    transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.contact-submit:hover {
+    background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+    transform: translateY(-1px);
+    box-shadow: 0 14px 26px rgba(124, 58, 237, 0.28);
+}
+
+.contact-help-card {
+    width: 100%;
+    align-self: stretch;
+    padding: clamp(24px, 3vw, 36px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 24px;
+    background:
+        radial-gradient(circle at 100% 0, rgba(34, 211, 238, 0.2), transparent 16rem),
+        linear-gradient(145deg, #111827, #1e1b4b);
+    color: #e2e8f0;
+    box-shadow: 0 22px 55px rgba(15, 23, 42, 0.2);
+}
+
+.contact-kicker {
+    color: #67e8f9;
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+}
+
+.contact-help-card h2 {
+    margin: 16px 0 12px;
+    color: #fff;
+    font-size: clamp(1.6rem, 3vw, 2.15rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+}
+
+.contact-help-card > p {
+    margin-bottom: 30px;
+    color: #bdc8d8;
+    line-height: 1.65;
+}
+
+.contact-help-detail {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 14px;
+    overflow-wrap: anywhere;
+}
+
+.contact-detail-icon {
+    display: grid;
+    flex: 0 0 40px;
+    width: 40px;
+    height: 40px;
+    place-items: center;
+    border: 1px solid rgba(103, 232, 249, 0.25);
+    border-radius: 12px;
+    background: rgba(34, 211, 238, 0.1);
+    color: #67e8f9;
+    font-weight: 700;
+}
+
+.contact-help-detail a {
+    color: #e2e8f0;
+    text-decoration: none;
+}
+
+.contact-help-detail a:hover {
+    color: #67e8f9;
+}
+
+@media (max-width: 767px) {
+    .contact-layout {
+        margin: 28px auto;
+        --bs-gutter-x: 16px;
+    }
+
+    .contact-form-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .contact-field-wide,
+    .contact-submit {
+        grid-column: auto;
+    }
 }
 
 
