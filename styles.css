@@ -118,33 +118,137 @@ header {
 }
 
 .payment-promotions {
-    background: rgb(2,40,41);
-    background: linear-gradient(0deg, rgba(2,40,41,1) 0%, rgba(175,205,225,1) 0%, rgba(55,135,251,1) 0%, rgba(207,205,217,1) 0%, rgba(80,150,245,1) 0%, rgba(163,255,0,1) 0%, rgba(180,230,92,1) 0%);
-    padding: 50px 0; /* Espaciado interno */
+    padding: 64px 24px;
+    background:
+        radial-gradient(circle at 15% 20%, rgba(190, 242, 100, 0.24), transparent 22rem),
+        linear-gradient(135deg, #ecfccb 0%, #d9f99d 48%, #bef264 100%);
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto; /* Centra el contenido horizontalmente */
+    max-width: 1180px;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between; /* Distribuye los elementos a los lados */
+    gap: 24px;
+    justify-content: space-between;
 }
 
 .payment-methods, .special-promotions {
-    flex: 1; /* Ocupa el mismo espacio */
+    position: relative;
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    padding: 34px;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.82);
+    box-shadow: 0 18px 45px rgba(15, 23, 42, 0.10);
+    backdrop-filter: blur(12px);
+}
+
+.payment-methods::before,
+.special-promotions::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #7c3aed, #22d3ee);
+}
+
+.special-promotions {
+    background: linear-gradient(145deg, #0f172a, #1e1b4b);
+}
+
+.special-promotions::before {
+    background: linear-gradient(90deg, #22d3ee, #a78bfa);
 }
 
 .payment-methods h2, .special-promotions h2 {
-    color: #333; /* Color del título */
+    margin: 8px 0 18px;
+    color: #0f172a;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    letter-spacing: -0.03em;
+}
+
+.special-promotions h2 {
+    color: #fff;
+}
+
+.special-promotions p {
+    margin: 0 0 16px;
+    color: #cbd5e1;
+}
+
+.promo-eyebrow {
+    display: inline-block;
+    color: #7c3aed;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.special-promotions .promo-eyebrow {
+    color: #67e8f9;
 }
 
 .payment-methods ul, .special-promotions ul {
-    list-style-type: none;
+    display: grid;
+    gap: 10px;
+    list-style: none;
     padding: 0;
 }
 
 .payment-methods ul li, .special-promotions ul li {
-    margin-bottom: 10px; /* Espaciado entre elementos */
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    margin: 0;
+    padding: 10px 12px;
+    border-radius: 12px;
+    color: #334155;
+    background: #f8fafc;
+}
+
+.payment-methods ul li::before,
+.special-promotions ul li::before {
+    content: "✓";
+    display: grid;
+    flex: 0 0 28px;
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+    place-items: center;
+    border-radius: 50%;
+    background: #ede9fe;
+    color: #7c3aed;
+    font-weight: 800;
+}
+
+.special-promotions ul li {
+    color: #e2e8f0;
+    background: rgba(255, 255, 255, 0.07);
+}
+
+.special-promotions ul li::before {
+    background: rgba(34, 211, 238, 0.16);
+    color: #67e8f9;
+}
+
+@media (max-width: 768px) {
+    .payment-promotions {
+        padding: 40px 16px;
+    }
+
+    .payment-promotions > .container {
+        flex-direction: column;
+    }
+
+    .payment-methods, .special-promotions {
+        padding: 26px 20px;
+        border-radius: 18px;
+    }
 }
 
 
