@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "initialization": "module",
+  "canvases": [
+    {
+      "id": "footer-layout-examples",
+      "displayName": "Ejemplos de footer",
+      "description": "Compara visualmente distintas disposiciones del footer.",
+      "actions": [
+        {
+          "name": "select_layout",
+          "description": "Selecciona una de las propuestas de footer.",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "layout": {
+                "type": "string",
+                "enum": ["grid", "centered", "editorial", "split"]
+              }
+            },
+            "required": ["layout"]
+          }
+        }
+      ]
+    }
+  ]
+}

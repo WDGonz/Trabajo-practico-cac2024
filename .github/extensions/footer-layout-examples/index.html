@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ejemplos de footer</title>
+  <style>
+    :root { color-scheme: dark; --ink:#eef2ff; --muted:#aeb9cf; --surface:#111827; --line:#273244; --purple:#7c3aed; --cyan:#22d3ee; }
+    * { box-sizing:border-box; }
+    body { margin:0; min-height:100vh; font-family:Inter,Segoe UI,sans-serif; background:#080c16; color:var(--ink); }
+    main { width:min(1180px,calc(100% - 32px)); margin:auto; padding:32px 0 48px; }
+    h1 { margin:0 0 8px; font-size:28px; } p { color:var(--muted); }
+    .tabs { display:flex; gap:8px; margin:24px 0; flex-wrap:wrap; }
+    button { border:1px solid var(--line); border-radius:10px; background:#151d2d; color:var(--ink); padding:10px 14px; cursor:pointer; }
+    button[aria-selected="true"] { border-color:#8b5cf6; background:#312e81; }
+    .frame { min-height:330px; border:1px solid var(--line); border-radius:18px; background:#0e1420; padding:24px; display:flex; flex-direction:column; }
+    .page { flex:1; border-radius:12px; background:linear-gradient(135deg,#192238,#101827); margin-bottom:18px; display:grid; place-items:center; color:#7f8ba1; }
+    .footer { background:#090d18; border:1px solid var(--line); border-radius:12px; padding:22px; min-height:150px; }
+    .footer h3 { font-size:12px; text-transform:uppercase; letter-spacing:.12em; color:#cbd5e1; margin:0 0 12px; }
+    .copy { width:70%; height:8px; border-radius:8px; background:#273244; margin:7px 0; } .copy.short { width:44%; }
+    .links { display:grid; gap:8px; } .link { height:8px; width:90px; border-radius:8px; background:#64748b; }
+    .social { display:flex; gap:8px; } .icon { width:34px; height:34px; display:grid; place-items:center; border:1px solid #38445a; border-radius:10px; color:var(--cyan); }
+    .grid { display:grid; grid-template-columns:1.2fr .8fr .8fr auto; gap:24px; align-items:start; }
+    .centered { text-align:center; } .centered .main-row { display:flex; justify-content:center; gap:50px; } .centered .social { justify-content:center; margin-top:18px; }
+    .editorial { display:grid; grid-template-columns:1.6fr .7fr .7fr; gap:32px; } .editorial .contact { border-left:3px solid var(--purple); padding-left:18px; }
+    .split { display:grid; grid-template-columns:1.3fr 1fr auto; gap:28px; align-items:center; } .split .social { justify-content:flex-end; }
+    [hidden] { display:none !important; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Opciones de disposición del footer</h1>
+  <p>Seleccioná una propuesta para visualizarla.</p>
+  <div class="tabs" role="tablist" aria-label="Disposiciones">
+    <button data-layout="grid" role="tab" aria-selected="true">1. Grid de cuatro bloques</button>
+    <button data-layout="centered" role="tab" aria-selected="false">2. Diseño centrado</button>
+    <button data-layout="editorial" role="tab" aria-selected="false">3. Diseño editorial</button>
+    <button data-layout="split" role="tab" aria-selected="false">4. División lateral</button>
+  </div>
+  <section class="frame" aria-live="polite">
+    <div class="page">CONTENIDO DEL SITIO</div>
+    <div id="preview"></div>
+  </section>
+</main>
+<script>
+  const social = '<div class="social" aria-label="Redes sociales"><span class="icon">f</span><span class="icon">t</span><span class="icon">in</span><span class="icon">ig</span></div>';
+  const previews = {
+    grid: `<div class="footer grid"><div><h3>Contacto</h3><div class="copy"></div><div class="copy short"></div></div><div><h3>Productos</h3><div class="links"><span class="link"></span><span class="link"></span></div></div><div><h3>Navegación</h3><div class="links"><span class="link"></span><span class="link"></span></div></div><div><h3>Redes</h3>${social}</div></div>`,
+    centered: `<div class="footer centered"><h3>PortatilPro</h3><div class="main-row"><div><h3>Contacto</h3><div class="copy"></div></div><div><h3>Navegación</h3><div class="links"><span class="link"></span><span class="link"></span></div></div></div>${social}</div>`,
+    editorial: `<div class="footer editorial"><div class="contact"><h3>Contacto</h3><div class="copy"></div><div class="copy short"></div></div><div><h3>Explorar</h3><div class="links"><span class="link"></span><span class="link"></span></div></div><div><h3>Redes</h3>${social}</div></div>`,
+    split: `<div class="footer split"><div><h3>Contacto</h3><div class="copy"></div></div><div><h3>Navegación</h3><div class="links"><span class="link"></span><span class="link"></span></div></div><div><h3>Redes</h3>${social}</div></div>`
+  };
+  function show(layout) {
+    document.querySelector('#preview').innerHTML = previews[layout];
+    document.querySelectorAll('[data-layout]').forEach(b => b.setAttribute('aria-selected', String(b.dataset.layout === layout)));
+  }
+  document.querySelectorAll('[data-layout]').forEach(button => button.addEventListener('click', () => show(button.dataset.layout)));
+  show('grid');
+</script>
+</body>
+</html>
