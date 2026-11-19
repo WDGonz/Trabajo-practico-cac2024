@@ -1,16 +1,16 @@
-// Script para manejar el slideshow
-let slideIndex = 0;
-showSlides();
-        
-function showSlides() {
- let slides = document.querySelectorAll('.slide');
- for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-}
-slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}
-    slides[slideIndex-1].style.display = "block";
-    setTimeout(showSlides, 2000); // Cambiar imagen cada 2 segundos
-}
-        
-        
+document.querySelectorAll('.slideshow-container').forEach((container) => {
+    const slides = container.querySelectorAll('.slide');
+    let slideIndex = 0;
+
+    function showSlides() {
+        slides.forEach((slide, index) => {
+            slide.style.display = index === slideIndex ? 'block' : 'none';
+        });
+        slideIndex = (slideIndex + 1) % slides.length;
+        window.setTimeout(showSlides, 4000);
+    }
+
+    if (slides.length > 0) {
+        showSlides();
+    }
+});
