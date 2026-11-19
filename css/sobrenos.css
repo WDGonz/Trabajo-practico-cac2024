@@ -96,40 +96,94 @@ header {
 }
 
 .container {
-    width: 80%;
-    margin: 0 auto;
+    width: min(1180px, calc(100% - 48px));
+    margin: 48px auto;
+    padding: 38px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 24px;
+    background: rgba(248, 250, 252, 0.94);
+    box-shadow: 0 24px 60px rgba(15, 23, 42, 0.20);
+    backdrop-filter: blur(14px);
     font-family: "Rationale", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+.container > h1 {
+    margin: 0 0 28px;
+    color: #0f172a;
+    text-align: center;
+    font-size: clamp(2rem, 5vw, 3.25rem);
+    letter-spacing: -0.04em;
 }
   
 .carousel {
     display: flex;
     overflow: hidden;
     min-width: 100%;
+    border-radius: 18px;
     transition: transform 0.5s ease;
 }
   
 .slide{
     min-width: 100%;
+    padding: 28px;
+    border: 1px solid rgba(148, 163, 184, 0.22);
+    border-radius: 18px;
+    background: #d9f99d;
     transition: transform 0.5s ease;
 }
 
 img {
     width: 100%;
     max-width: 400px;
-    border-radius: 10px;
-    margin-left: 30%;
+    display: block;
+    margin: 0 auto 24px;
+    border: 6px solid #fff;
+    border-radius: 18px;
+    box-shadow: 0 16px 32px rgba(15, 23, 42, 0.16);
 }
   
 .info {
-    background-color: #9dacb4;
-    padding: 10px;
-    border-radius: 5px;
+    padding: clamp(20px, 3vw, 34px);
+    border: 1px solid rgba(101, 163, 13, 0.18);
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 12px 30px rgba(51, 65, 85, 0.10), inset 0 1px 0 #fff;
+    color: #334155;
     font-family: "Rationale", sans-serif;
     font-weight: 400;
     font-style: normal;
+    line-height: 1.7;
+}
 
+.info p {
+    margin-bottom: 14px;
+}
+
+.info h2,
+.info h3 {
+    color: #365314;
+    line-height: 1.25;
+}
+
+.info h2 {
+    margin-top: 28px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(101, 163, 13, 0.2);
+}
+
+.info h3 {
+    margin-top: 22px;
+    font-size: 1.25rem;
+}
+
+.info h2:first-child {
+    margin-top: 0;
+}
+
+.info strong {
+    color: #1f2937;
 }
 
 .dev-links {
@@ -160,7 +214,22 @@ img {
 
 @media (max-width: 768px) {
     .container {
-      width: 95%;
+      width: calc(100% - 24px);
+      margin: 24px auto;
+      padding: 18px;
+      border-radius: 18px;
+    }
+
+    .slide {
+      padding: 14px;
+    }
+
+    .info {
+      padding: 16px;
+    }
+
+    img {
+      max-width: 280px;
     }
 }
 
