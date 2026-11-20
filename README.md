@@ -9,23 +9,23 @@ Adoptando para la maquetacion Flexbox.
 
 Este trabajo debia cunplir con las siguientes consignas:
 
-Contenido
+## Contenido
 
 ● Si el diseño es por páginas: al menos
 4 páginas HTML, con temáticas de
 libre elección.
 
- Etiquetas semánticas
+## Etiquetas semánticas
 
 ● Utilizar etiquetas semánticas para
 estructurar el contenido del sitio.
 
- Formulario
+## Formulario
 
 ● Incluir un formulario de contacto
 con validación mediante JavaScript.
 
- Diseño estético
+## Diseño estético
 
 Incorporar al menos:
 ● Un Iframe,
@@ -34,7 +34,7 @@ similar,
 ● Fuentes locales, de Google Fonts u
 otro similar.
 
- Diseño responsive
+ ## Diseño responsive
 
 Incluir:
 ● Al menos una página
@@ -46,7 +46,7 @@ vea correctamente en diversos
 dispositivos, brindando una
 experiencia óptima a los usuarios.
 
- Dinamismo visual
+ ## Dinamismo visual
 
 Introducir al menos una animación:
 
@@ -58,14 +58,14 @@ animación).
 ● Pueden utilizar librerías externas si
 lo desean.
 
- Maquetación
+ ## Maquetación
 
 La estructura HTML deberá estar
 asociada a estilos CSS3, como parte
 del diseño se incluirá Flexbox y/o
 Grid.
 
- Framework de CSS
+## Framework de CSS
 
 ● En caso de querer usar Bootstrap (no
 obligatorio), solo podrán emplearlo en
@@ -80,7 +80,7 @@ obtenidos de estos frameworks.
 trabajo práctico será considerado no
 válido.
 
-Publicación y GIT
+## Publicación y GIT
 
 ● La página web debe ser cargada en
 un servidor en línea para que el
